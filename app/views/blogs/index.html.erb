@@ -10,7 +10,8 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+
 
 <center>
   <form method="post" style="width:600px">
@@ -37,9 +38,9 @@
                       <tr>
                         <td><%= blog.bolg_name %></td>
                         <td><%= blog.blog_des %></td>
-                        <td><%= link_to 'Show', blog %></td>
-                        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-                        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                        <td><%= link_to 'Show', blog, class:"waves-effect waves-light btn" %></td>
+                        <td><%= link_to 'Edit', edit_blog_path(blog),class:"waves-effect waves-light btn" %></td>
+                        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' }, class:"waves-effect red darken-3 btn"%></td>
                       </tr>
                     <% end %>
                   </tbody>
@@ -47,10 +48,10 @@
 
                 <br>
 
-                <%= link_to 'New Blog', new_blog_path %>
+                <%= link_to 'New Blog', new_blog_path,class:"waves-effect waves-light btn" %>
 
                 <% if user_signed_in? %>
-                            <%= link_to "sign out", destroy_user_session_path, :method => :delete %>
+                            <%= link_to "sign out", destroy_user_session_path, :method => :delete ,class:"waves-effect red darken-3 btn" %>
                 <% end %>
               </div>
             </div>

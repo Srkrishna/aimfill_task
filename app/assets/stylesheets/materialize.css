@@ -3198,7 +3198,7 @@ span.badge {
 
 span.badge.new {
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 1.8rem;
   color: #fff;
   background-color: #26a69a;
   border-radius: 2px;
@@ -5595,7 +5595,7 @@ button:focus {
 }
 
 label {
-  font-size: 0.8rem;
+  font-size: 1.8rem;
   color: #9e9e9e;
 }
 
@@ -5922,7 +5922,7 @@ textarea.materialize-textarea + label:after {
 }
 
 .input-field label.active {
-  font-size: 0.8rem;
+  font-size: 1.8rem;
   -webkit-transform: translateY(-140%);
           transform: translateY(-140%);
 }
@@ -6515,7 +6515,7 @@ select {
 .select-wrapper + label {
   position: absolute;
   top: -14px;
-  font-size: 0.8rem;
+  font-size: 1.8rem;
 }
 
 select:disabled {
